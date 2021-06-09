@@ -1,0 +1,6 @@
+include ':volley-master'
+include ':android-volley1'
+include ':android-volley'
+include ':android-volley-master'
+include ':app'
+rootProject.name = "AppVaCov"

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".perso_ruta">
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="ObtenerRuta"
+        android:text="Obtener"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <RadioGroup
+        android:layout_width="248dp"
+        android:layout_height="189dp"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/button12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txFechaBuscar"
+        app:layout_constraintVertical_bias="0.366">
+
+        <RadioButton
+            android:id="@+id/isAuto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="En Auto" />
+
+        <RadioButton
+            android:id="@+id/isCaminando"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A Pie" />
+
+        <RadioButton
+            android:id="@+id/isBici"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="En Bicicleta" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/txFechaBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="dd/mm/yyyy"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccione una fecha"
+        app:layout_constraintBottom_toTopOf="@+id/txFechaBuscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
